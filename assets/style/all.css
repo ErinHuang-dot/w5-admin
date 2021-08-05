@@ -1,23 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  color: #212529; }
+
+span {
+  display: inline-block; }
+
+.material-icons.grey-900 {
+  color: #212529; }
+
 .header {
-  height: 200px;
-  background-color: #00cc99; }
-
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: 296px;
+  height: 100vh;
+  padding: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.admin-logo {
+  margin: 0 0 32px 32px; }
+
+.admin-menu {
+  font-weight: 700; }
+  .admin-menu li {
+    width: inherit;
+    margin-bottom: 26px; }
+    .admin-menu li a {
+      padding: 6px 0 6px 32px;
+      border-left: 4px solid #f8f9fa;
+      vertical-align: middle; }
+      .admin-menu li a:hover {
+        color: #198754;
+        border-left: 4px solid #198754; }
+      .admin-menu li a span {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 16px; }
+
+.user-info {
+  margin-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .user-img img {
+    width: 100%;
+    position: absolute;
+    top: -5px; }
+
+.user-account p {
+  margin-bottom: 0; }
+  .user-account p:first-child {
+    font-weight: 700;
+    color: #212529; }
+  .user-account p:last-child {
+    font-size: 14px;
+    color: #6c757d; }
 
 /*# sourceMappingURL=all.css.map */
