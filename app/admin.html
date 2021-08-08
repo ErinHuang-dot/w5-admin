@@ -1,0 +1,289 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+    <div class="container">
+        <div class="admin-controlbar">
+            <div class="controlbar-left">
+                <h2 class="fw-bold">Admin</h2>
+                <div class="add-box">
+                    <p class="fw-bold"><span class="material-icons pointer m-r-1" data-bs-toggle="modal" data-bs-target="#addModal">add</span>Add New Admin</p>
+                </div>
+            </div>
+            <div class="controlbar-right">
+                <sapn class="material-icons pointer">search</sapn>
+                <sapn class="material-icons pointer">notifications_active</sapn>
+            </div>
+        </div>
+
+        <div class="admin-table">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">ID<span class="material-icons pointer fw-bold">arrow_downward</span></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">#1</th>
+                        <td>Emir Wicks</td>
+                        <td>emir.wicks@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#2</th>
+                        <td>Zaina Goldsmith</td>
+                        <td>zaina.goldsmith@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#3</th>
+                        <td>Mahima Lopez</td>
+                        <td>mahima.lopez@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#4</th>
+                        <td>Pharrell Murray</td>
+                        <td>pharrell.murray@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#5</th>
+                        <td>Annika Mcbride</td>
+                        <td>annika.mcbride@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#6</th>
+                        <td>Fatimah Clark</td>
+                        <td>fatimah.clark@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#7</th>
+                        <td>Klaudia Rhodes</td>
+                        <td>klaudia.rhodes@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#8</th>
+                        <td>Tillie Lucero</td>
+                        <td>tillie.lucero@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#9</th>
+                        <td>Sabrina Stephenson</td>
+                        <td>sabrina.stephenson@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#10</th>
+                        <td>Annie Smith</td>
+                        <td>annie.smith@mail.com</td>
+                        <td>Yes</td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#viewModal">visibility</span></td>
+                        <td><span class="material-icons pointer" data-bs-toggle="modal" data-bs-target="#editModal">edit</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link page-link-backward" href="#"><span class="material-icons">chevron_left</span></a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link page-link-forward" href="#"><span class="material-icons">chevron_right</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header pd-2">
+                    <h5 class="modal-title fw-bold" id="addModalLabel">New Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body pd-2">
+                    <div class="account-box bdb-light pd-b1">
+                        <h6 class="fw-bold">Account</h6>
+                        <form action="post" class="account-form">
+                            <div class="account-input1">
+                                <label for="">Name</label>
+                                <input type="text" name="name" id="name" class="pd-1 bd-1-light">    
+                            </div>
+                            <div class="account-input2">
+                                <label for="">Email</label>
+                                <input type="email" name="email" id="email" class="pd-1 bd-1-light">    
+                            </div>
+                        </form>
+                    </div>
+                    <div class="veri-box bdb-light pd-t2 pd-b2">
+                        <h6 class="fw-bold">Verification</h6>
+                        <div class="veri-content m-b-2">
+                            <p class="fw-bold"><span class="material-icons text-danger">warning</span>Unverified</p>
+                        </div>
+                        <button type="button" class="btn btn-outline-success pd-t1 pd-b1">Send Verification Mail</button>
+                    </div>
+                    <div class="access-level-box bdb-light pd-t2 pd-b2">
+                        <h6 class="fw-bold">Access Level</h6>
+                        <select name="accessLevel" id="accessLevel" class="pd-1">
+                            <option class="d-none" value="Choose">-Choose access level-</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="custom-access-box pd-t2 pd-b2">
+                        <h6 class="fw-bold">Custom Access</h6>
+                        <form action="post">
+                            <input type="checkbox" name="access" value="lecture" class="m-r-1 m-b-2">Lecture<br>
+                            <input type="checkbox" name="access" value="coupon" class="m-r-1 m-b-2">Coupon<br>
+                            <input type="checkbox" name="access" value="message" class="m-r-1 m-b-2">Message<br>
+                            <input type="checkbox" name="access" value="setting" class="m-r-1 m-b-2">Setting<br>
+                            <input type="checkbox" name="access" value="taskmenu" class="m-r-1">Task Menu
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer pd-2">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header pd-2">
+                    <h5 class="modal-title fw-bold" id="editModalLabel">Edit Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body pd-2">
+                    <div class="account-box bdb-light pd-b1">
+                        <h6 class="fw-bold">Account</h6>
+                        <form action="post" class="account-form">
+                            <div class="account-input1">
+                                <label for="">Name</label>
+                                <input type="text" name="name" id="name" value="Emir Wicks" class="pd-1 bg-light bd-0" readonly>    
+                            </div>
+                            <div class="account-input2">
+                                <label for="">Email</label>
+                                <input type="email" name="email" id="email" value="emir.wicks@mail.com" class="pd-1 bg-light bd-0" readonly>    
+                            </div>
+                        </form>
+                    </div>
+                    <div class="veri-box bdb-light pd-t2 pd-b2">
+                        <h6 class="fw-bold">Verification</h6>
+                        <div class="veri-content m-b-2">
+                            <p class="fw-bold"><span class="material-icons">check_circle</span>Verified</p>
+                            <p>2020/4/12</p>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary pd-t1 pd-b1" disabled>Send Verification Mail</button>
+                    </div>
+                    <div class="access-level-box bdb-light pd-t2 pd-b2">
+                        <h6 class="fw-bold">Access Level</h6>
+                        <select name="accessLevel" id="accessLevel" class="pd-1">
+                            <option value="admin" selected>Admin</option>
+                        </select>
+                    </div>
+                    <div class="custom-access-box bdb-light pd-t2 pd-b2">
+                        <h6 class="fw-bold">Custom Access</h6>
+                        <form action="post">
+                            <input type="checkbox" name="access" value="lecture" class="m-r-1 m-b-2">Lecture<br>
+                            <input type="checkbox" name="access" value="coupon" class="m-r-1 m-b-2">Coupon<br>
+                            <input type="checkbox" name="access" value="message" class="m-r-1 m-b-2">Message<br>
+                            <input type="checkbox" name="access" value="setting" class="m-r-1 m-b-2">Setting<br>
+                            <input type="checkbox" name="access" value="taskmenu" class="m-r-1">Task Menu
+                        </form>
+                    </div>
+                    <div class="deactivate-box pd-t2">
+                        <h6 class="fw-bold">Deactivate Account</h6>
+                        <p class="text-danger m-b-2"><span class="material-icons text-danger m-r-1">warning</span>This cannot be undone!</p>
+                        <button type="button" class="btn btn-outline-danger pd-t1 pd-b1">Deactivate This Account</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer pd-2">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card pd-1" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 view-imgbox">
+                                <img class="view-img" src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1350&q=80" alt="Emir Wicks">
+                            </div>
+                            <div class="col-md-8 view-content">
+                                <div class="card-body">
+                                    <div class="card-mark m-b-1">
+                                        <p>#1</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <p>Admin</p>
+                                    <h5 class="card-title fw-bold m-b-1">Emir Wicks</h5>
+                                    <p class="card-text"><small class="text-muted">emir.wicks@mail.com</small></p>
+                                    <div class="view-veri">
+                                        <span class="view-veristatus">Verified</span>
+                                        <div class="expand">
+                                            <span class="material-icons expand-less pointer" data-bs-toggle="collapse" data-bs-target="#collapseViewFooter" aria-expanded="false" aria-controls="collapseViewFooter">expand_less</span>
+                                            <span class="material-icons expand-more pointer" data-bs-toggle="collapse" data-bs-target="#collapseViewFooter" aria-expanded="false" aria-controls="collapseViewFooter">expand_more</span>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseViewFooter">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Deactivate</button>
+                        <button type="button" class="btn btn-success">Edit</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+

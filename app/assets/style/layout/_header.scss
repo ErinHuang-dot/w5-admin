@@ -1,0 +1,77 @@
+.wrap {
+    display: flex;
+}
+
+.header {
+    width: 296px;
+    padding: 32px 0;
+    margin-right: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-logo {
+    margin: 0 0 32px 32px;
+}
+
+.admin-menu {
+
+    li {
+        width: inherit;
+        margin-bottom: 26px;
+
+        a {
+            padding: 6px 0 6px 32px;
+            border-left: 4px solid $grey-100;
+            vertical-align: middle;
+            
+            &:hover {
+                color: $color-accent;
+                border-left: 4px solid $color-accent;
+
+                .material-icons {
+                    color: $color-accent;
+                }
+            }
+
+            span {
+                width: 24px;
+                height: 24px;
+                margin-right: 16px;
+            }
+        }
+
+    }
+
+}
+
+.user-info {
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: -5px;
+    }
+}
+
+.user-account {
+    p {
+        &:last-child {
+            font-size: 14px;
+            color: $grey-600;
+        }
+    }
+}

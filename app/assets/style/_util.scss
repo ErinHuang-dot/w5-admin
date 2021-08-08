@@ -1,0 +1,61 @@
+.pointer {
+    cursor: pointer;
+}
+
+// font
+.fw-bold {
+    font-weight: 700;
+}
+
+// border
+.bdb-light {
+    border-bottom: 1px solid $grey-400; //edit-form-box
+}
+
+.bd-0 {
+    border: none;
+}
+
+.bd-1-light {
+    border: 1px solid $grey-900;
+}
+
+// padding-bottom
+.pd-b1 {
+    padding-bottom: 16px;
+}
+
+.pd-b2 {
+    padding-bottom: 24.5px; //edit-form-box
+}
+
+// padding-top
+.pd-t1 {
+    padding-top: 16px;
+}
+
+.pd-t2 {
+    padding-top: 24.5px; //edit-form-box
+}
+
+// padding
+.pd-1 {
+    padding: 16px; //edit-form-input
+}
+
+.pd-2 {
+    padding: 32px;
+}
+
+// margin
+.m-r-1 {
+    margin-right: 8px;
+}
+
+.m-b-1 {
+    margin-bottom: 8px;
+}
+
+.m-b-2 {
+    margin-bottom: 18px;
+}
